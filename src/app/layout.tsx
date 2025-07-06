@@ -6,6 +6,8 @@ import { CssBaseline } from "@mui/material";
 import "./globals.css";
 
 import darkTheme from "@/theme/darkTheme";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
 	children,
@@ -17,7 +19,9 @@ export default function RootLayout({
 			<body>
 				<ThemeProvider theme={darkTheme}>
 					<CssBaseline />
+					<Header />
 					{children}
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>
